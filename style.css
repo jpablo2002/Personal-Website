@@ -102,24 +102,20 @@ a.github{
 
 #about{
     width: 100%;
-    padding: 60px 15%;
-    background:rgb(132, 147, 231);
+    background:url(/images/Starry-sky.jpg);
     box-sizing: border-box;
     color: white;
-}
-
-.description{
     padding: 60px;
     text-align: center;
-    background: rgb(236, 193, 153);
+    border: 10px solid rgb(104, 97, 97);
 }
 
-.description h1{
+#about h1{
     margin: 10px 0;
     font-size: 3.5rem;
 }
 
-.description p{
+#about p{
     font-size: 1.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 2rem;
@@ -127,14 +123,9 @@ a.github{
 
 #skills{
     text-align: center;
-    background: rgb(7, 13, 70);
-    padding: 60px;
+    background: url(/images/Abstact.jpg);
     color: #fff;
-}
-
-.my-skills{
     padding: 60px;
-    background: rgb(169, 185, 236);
 }
 
 #skills h1{
@@ -148,6 +139,7 @@ a.github{
 
 #projects{
     padding: 0 40px;
+    padding-bottom: 30px;
     background: url(/images/pexels-tranmautritam-245032.jpg) no-repeat;
     background-size:cover;
     min-height: 40vh;
@@ -193,6 +185,7 @@ a.github{
     font-size: 1.25rem;
     padding: 30px;
     background:rgba(124, 121, 121, 0.4);
+    margin: 0;
 }
 
 .conways-game{
@@ -207,7 +200,7 @@ a.github{
 
 .conways-game img{
     width: 600px;
-    height: 350px;
+    height: 342px;
     border: 20px groove rgb(31, 31, 31);
     transition: 0.2s;
 }
@@ -225,7 +218,7 @@ a.github{
 
 #contact{
     text-align: center;
-    background: rgb(161, 161, 161);
+    background: rgb(19, 18, 18);
 }
 
 #contact h1{
@@ -237,10 +230,15 @@ a.github{
 
 #contact div{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
     margin: 0 60px;
     margin-bottom: 30px;
+}
+
+#contact a{
+    text-decoration: underline;
+    color: #fff;
 }
 
 @media screen and (max-width: 1400px){
