@@ -147,7 +147,7 @@ a.github{
 }
 
 #projects{
-    grid-area: proj;
+    padding: 0 40px;
     background: url(/images/pexels-tranmautritam-245032.jpg) no-repeat;
     background-size:cover;
     min-height: 40vh;
@@ -165,6 +165,7 @@ a.github{
 .projects-grid-wrap{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     color: rgb(255, 255, 255);
 }
 
@@ -175,15 +176,23 @@ a.github{
 .personal-website h2{
     font-size: 3rem;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .personal-website img{
     width: 600px;
     border: 20px groove rgb(31, 31, 31);
+    transition: 0.2s;
+}
+
+.personal-website img:hover{
+    transform: scale(1.02);
 }
 
 .personal-website p{
     font-size: 1.25rem;
+    padding: 30px;
+    background:rgba(124, 121, 121, 0.4);
 }
 
 .conways-game{
@@ -193,16 +202,25 @@ a.github{
 .conways-game h2{
     font-size: 3rem;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .conways-game img{
     width: 600px;
     height: 350px;
     border: 20px groove rgb(31, 31, 31);
+    transition: 0.2s;
+}
+
+.conways-game img:hover{
+    transform: scale(1.02);
 }
 
 .conways-game p{
+    margin: 0;
     font-size: 1.25rem;
+    padding: 30px;
+    background:rgba(124, 121, 121, 0.4);
 }
 
 #contact{
@@ -221,6 +239,15 @@ a.github{
     display: inline-block;
     font-size: 1rem;
     color: #fff;
-    margin: 0 40px;
+    margin: 0 60px;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1400px){
+    .projects-grid-wrap{
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        color: rgb(255, 255, 255);
+    }
 }
