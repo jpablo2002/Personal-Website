@@ -126,6 +126,8 @@ a.github{
     background: url(/images/Abstact.jpg);
     color: #fff;
     padding: 60px;
+    border: 10px solid rgb(104, 97, 97);
+    border-top: 0;
 }
 
 #skills h1{
@@ -241,7 +243,7 @@ a.github{
     color: #fff;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1535px){
     .projects-grid-wrap{
         display: block;
         grid-template-columns: repeat(2, 1fr);
