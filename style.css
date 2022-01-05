@@ -39,7 +39,7 @@ nav a{
     padding: 15px;
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: 0.2s;
+    transition: transform 0.2s;
 }
 
 nav li:hover{
@@ -60,12 +60,12 @@ nav ul.media{
 }
 
 a.linkedin{
-    background: url(/images/kisspng-linkedin-computer-icons-linkedin-5b111339e6d9d3.3995107815278456899456.png) no-repeat center;
+    background: url(./images/kisspng-linkedin-computer-icons-linkedin-5b111339e6d9d3.3995107815278456899456.png) no-repeat center;
     background-size: 80%;
 }
 
 a.github{
-    background: url("/images/GitHub-Mark-120px-plus.png") no-repeat center;
+    background: url("./images/GitHub-Mark-120px-plus.png") no-repeat center;
     background-size: 80%;
 }
 
@@ -75,7 +75,7 @@ a.github{
     padding: 0;
     width: 100%;
     height: 100vh;
-    background: url('/images/pexels-pixabay-33545.jpg') no-repeat center;
+    background: url('./images/pexels-pixabay-33545.jpg') no-repeat center;
     background-size: cover;
     text-align: center;
 }
@@ -88,6 +88,12 @@ a.github{
     font-family: fantasy;
     transition: 0.5s;
     margin-bottom: 10px;
+    animation: drop 1s ease-out 0s 1 normal forwards;
+}
+
+@keyframes drop {
+    0%{margin-top: 0vh;}
+    100%{margin-top: 45vh;}
 }
 
 #title h2{
@@ -102,7 +108,7 @@ a.github{
 
 #about{
     width: 100%;
-    background:url(/images/Starry-sky.jpg);
+    background:url(./images/Starry-sky.jpg);
     box-sizing: border-box;
     color: white;
     padding: 60px;
@@ -123,7 +129,7 @@ a.github{
 
 #skills{
     text-align: center;
-    background: url(/images/Abstact.jpg);
+    background: url(./images/Abstact.jpg);
     color: #fff;
     padding: 60px;
     border: 10px solid rgb(104, 97, 97);
@@ -142,7 +148,7 @@ a.github{
 #projects{
     padding: 0 40px;
     padding-bottom: 30px;
-    background: url(/images/pexels-tranmautritam-245032.jpg) no-repeat;
+    background: url(./images/pexels-tranmautritam-245032.jpg) no-repeat;
     background-size:cover;
     min-height: 40vh;
 }
