@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   width: 100%;
   padding: 0;
@@ -174,27 +175,28 @@ a.github {
   color: rgb(255, 255, 255);
 }
 
-.personal-website {
+.project-1 {
   text-align: center;
 }
 
-.personal-website h2 {
+.project-1 h2 {
   font-size: 3rem;
   margin: 0;
   padding-bottom: 20px;
 }
 
-.personal-website img {
+.project-1 img {
   width: 600px;
+  height: 340px;
   border: 20px groove rgb(31, 31, 31);
   transition: 0.2s;
 }
 
-.personal-website img:hover {
+.project-1 img:hover {
   transform: scale(1.02);
 }
 
-.personal-website p {
+.project-1 p {
   font-size: 1.25rem;
   padding: 30px;
   background: rgba(124, 121, 121, 0.4);
@@ -260,5 +262,37 @@ a.github {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .projects-grid-wrap {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-grid-wrap {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  .project-1 img {
+    width: 90%;
+    height: 342px;
+    border: 20px groove rgb(31, 31, 31);
+    transition: 0.2s;
+  }
+
+  .project-2 img {
+    width: 90%;
+    height: 342px;
+    border: 20px groove rgb(31, 31, 31);
+    transition: 0.2s;
   }
 }
